@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import TestView from '../views/TestView.vue' // import your test page
 import LoginView from '../views/LoginView.vue'
+// src/main.ts
+import '../assets/main.css'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
