@@ -1,21 +1,214 @@
+/* RESET E BASE */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-}
-
-main {
-  max-width: 1000px;
-  margin: auto;
-  padding-top: 80px;
-}
-body.dark {
-  background-color: #121212;
-  color: white;
-}
-
-body {
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+  background-color: #ffffff;
+  color: #111;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* LAYOUT PRINCIPAL */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 1rem 2rem;
+}
+
+/* CONTAINER COMUM */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+}
+
+.dark nav {
+  background-color: #1a1a1a;
+  border-color: #333;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.dark nav a {
+  color: #ddd;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* TÍTULOS DE SEÇÃO */
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #42b983;
+}
+
+.dark .section-title {
+  color: #64ffda;
+}
+
+/* BOTÕES */
+button,
+.contact-btn,
+form button {
+  padding: 0.5rem 1rem;
+  background-color: #42b983;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+button:hover,
+.contact-btn:hover {
+  background-color: #36966f;
+}
+
+.dark button,
+.dark .contact-btn {
+  background-color: #2d9473;
+}
+
+.dark button:hover {
+  background-color: #1e7e5d;
+}
+
+/* FORMULÁRIOS */
+form {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+.dark form {
+  background-color: #1e1e1e;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  color: black;
+}
+
+.dark input,
+.dark textarea {
+  background: #2a2a2a;
+  border-color: #555;
+  color: #eee;
+}
+
+/* TESTEMUNHOS */
+.testimonial {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-left: 4px solid #42b983;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.dark .testimonial {
+  background-color: #2d2d2d;
+  color: #eee;
+}
+
+/* SEÇÕES EXTRAS */
+.call-to-action {
+  text-align: center;
+  background: #e0ffe0;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.dark .call-to-action {
+  background: #1f1f1f;
+  color: #fff;
+  /* SOBRE - AboutView.vue */
+  .about-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+  }
+
+  .dark .about-container {
+    background-color: #121212;
+  }
+
+  .content {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .dark .content {
+    background-color: #1e1e1e;
+    color: #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .content h1 {
+    margin-bottom: 16px;
+    color: #42b983;
+  }
+
+  .dark .content h1 {
+    color: #64ffda;
+  }
+
+  .content p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .dark .content p {
+    color: #ddd;
+  }
 }

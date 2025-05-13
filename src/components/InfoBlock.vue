@@ -15,21 +15,3 @@ defineProps<{
   content: string
 }>()
 </script>
-
-<style scoped>
-.info-block {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 5px;
-  display: block;
-  align-items: auto;
-}
-h2 {
-  margin-bottom: 0.5rem;
-}
-ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-</style>

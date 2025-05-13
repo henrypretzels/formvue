@@ -1,0 +1,19 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "João S.",
+      "content": "Profissionais incríveis e suporte impecável. Recomendo muito!"
+    },
+    {
+      "id": 2,
+      "name": "Empresa XYZ",
+      "content": "Reduzimos 40% dos custos com as soluções da GHJ."
+    },
+    {
+      "id": 3,
+      "name": "Maria A.",
+      "content": "Me ajudaram a automatizar minha linha de produção com IoT!"
+    }
+  ]
+}

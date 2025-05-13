@@ -4,7 +4,7 @@
       <nav class="p-4 flex gap-4">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">Sobre</RouterLink>
-        <RouterLink to="/login">Login</RouterLink>
+        <RouterLink to="/contact">Entre em Contato</RouterLink>
       </nav>
       <button @click="darkMode = !darkMode">
         {{ darkMode ? 'Modo Claro' : 'Modo Escuro' }}
@@ -26,14 +26,3 @@ watch(darkMode, (value) => {
   document.body.classList.toggle('dark', value)
 })
 </script>
-
-<style scoped>
-nav a {
-  text-decoration: none;
-  color: inherit;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-</style>
