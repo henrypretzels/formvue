@@ -1,75 +1,54 @@
-formvue
+# formvue
 
 This template should help get you started developing with Vue 3 in Vite.
-Recommended IDE Setup
 
-    VSCode + Volar (and disable Vetur).
+## Recommended IDE Setup
 
-Type Support for .vue Imports in TS
+- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-    TypeScript cannot handle type information for .vue imports by default, so we replace the tsc CLI with vue-tsc for type checking.
-    In editors, we need Volar to make the TypeScript language service aware of .vue types.
+## Type Support for `.vue` Imports in TS
 
-Customize configuration
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking.  
+In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-    See Vite Configuration Reference.
+## Customize Configuration
 
-Project Setup
+See the [Vite Configuration Reference](https://vite.dev/config/).
 
-sh
+## Project Setup
 
+```sh
 npm install
-
-Compile and Hot-Reload for Development
-
-sh
+##Compile and Hot-Reload for Development
 
 npm run dev
 
-Type-Check, Compile and Minify for Production
-
-sh
+##Type-Check, Compile and Minify for Production
 
 npm run build
 
-Lint with ESLint
-
-sh
+##Lint with ESLint
 
 npm run lint
 
-Initialize Local Server (with json-server)
+##Initialize Local Server (with json-server)
 
-This project uses json-server to simulate a REST API for development purposes. The server runs at http://localhost:3000.
+##This project uses json-server to simulate a REST API for development purposes. The server runs at http://localhost:3000.
 Setup
 
-    Install json-server globally:
-
-sh
+##Install json-server globally:
 
 npm install -g json-server
 
-    Or as a development dependency:
-
-sh
+##Or install it as a development dependency:
 
 npm install --save-dev json-server
 
-    Create a db.json file in the root of your project with some mock data. Example:
+##Run the Server
 
-json6 lines
-Click to expand
-
-{
-"users": [
-...
-
-Run the Server
-
-    Start the server on port 3000:
-
-sh
+##Start the server on port 3000:
 
 json-server --watch db.json --port 3000
 
-    Access the API at: http://localhost:3000
+##Access the API at: http://localhost:3000
+
